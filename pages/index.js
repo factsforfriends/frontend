@@ -13,9 +13,14 @@ const Index = ({ snacks }) => (
           className="rounded border-2 p-2 border-blue-500 hover:border-red-500 my-5"
           // key={id}
         >
-          <h2>{Category}</h2>
+          <h1>{Category}</h1>
           <p>{Text}</p>
           <div>{URL}</div>
+          <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{Category}</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#tag2</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#tag3</span>
+          </div>
         </li>
       ))}
     </ul>
