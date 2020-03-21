@@ -5078,6 +5078,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/PageTitle */ "./components/PageTitle.js");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.css */ "./index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_4__);
 
 
 var _this = undefined,
@@ -5088,38 +5090,42 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 var Index = function Index(_ref) {
   var posts = _ref.posts;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_PageTitle__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }
-  }, "Kategorien"), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 7,
       columnNumber: 5
     }
-  }, "Add some description here"), __jsx("ul", {
+  }, "Kategorien"), __jsx("p", {
+    className: "text-blue-600 my-5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, "Add some description here"), __jsx("ul", {
+    className: "p-5 shadow rounded list-none bg-orange-100",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, posts.map(function (_ref2) {
     var id = _ref2.id,
         title = _ref2.title;
     return __jsx("li", {
+      className: "rounded border-2 p-2 border-blue-500 hover:border-red-500 my-5",
       key: id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 9
       }
     }, title);
@@ -5181,5 +5187,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

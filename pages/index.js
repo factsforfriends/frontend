@@ -1,14 +1,20 @@
 import fetch from "isomorphic-unfetch";
 import PageTitle from "../components/PageTitle";
+import "../index.css";
 
 const Index = ({ posts }) => (
   <>
     <PageTitle>Kategorien</PageTitle>
-    <p>Add some description here</p>
+    <p className="text-blue-600 my-5">Add some description here</p>
 
-    <ul>
+    <ul className="p-5 shadow rounded list-none bg-orange-100">
       {posts.map(({ id, title }) => (
-        <li key={id}>{title}</li>
+        <li
+          className="rounded border-2 p-2 border-blue-500 hover:border-red-500 my-5"
+          key={id}
+        >
+          {title}
+        </li>
       ))}
     </ul>
   </>

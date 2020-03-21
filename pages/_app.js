@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background--1);
     font-family: 'PT Sans', sans-serif;
     margin: 0;
   }

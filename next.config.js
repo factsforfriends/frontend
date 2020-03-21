@@ -3,6 +3,7 @@
 // the browser will use files previously saved locally to the user’s device instead.
 // AKA Offline Mode!
 const withOffline = require("next-offline");
+const withCSS = require("@zeit/next-css");
 
 const nextConfig = {
   target: "serverless",
@@ -28,4 +29,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(nextConfig);
+module.exports = withOffline(withCSS(nextConfig));
