@@ -32,6 +32,11 @@ const Nav = () => (
           <a href="/">{title}</a>
         </H1>
       </Link>
+      <Link as={`/about`} href={`/about`}>
+        <H1>
+          <a href="/about">Über uns</a>
+        </H1>
+      </Link>
       <Link as={`/impressum`} href={`/impressum`}>
         <H1>
           <a href="/impressum">Impressum</a>
