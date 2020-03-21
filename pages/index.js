@@ -25,6 +25,9 @@ const Index = ({ snacks }) => (
               {Tags.split(" ").map(tag => (
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag.toLowerCase()}</span>
               ))}
+              {Location.split(" ").map(location => (
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{location.toLowerCase()}</span>
+              ))}
             </div>
           </div>
         </div>
