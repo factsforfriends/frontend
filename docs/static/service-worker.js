@@ -1,35 +1,35 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static/-JN4rWtCeDpbXiKL3gz8r/_buildManifest.js",
+    "url": "/_next/static/OzFtY7iB8VgY-tUbS-mow/_buildManifest.js",
     "revision": "0b53fe3ee46c3fc63dd56c185f8aba90"
   },
   {
-    "url": "/_next/static/-JN4rWtCeDpbXiKL3gz8r/_ssgManifest.js",
+    "url": "/_next/static/OzFtY7iB8VgY-tUbS-mow/_ssgManifest.js",
     "revision": "abee47769bf307639ace4945f9cfd4ff"
   },
   {
-    "url": "/_next/static/-JN4rWtCeDpbXiKL3gz8r/pages/_app.js",
-    "revision": "de728e9ff52b439a6733"
+    "url": "/_next/static/OzFtY7iB8VgY-tUbS-mow/pages/_app.js",
+    "revision": "ae8c85449d6c87d2759b"
   },
   {
-    "url": "/_next/static/-JN4rWtCeDpbXiKL3gz8r/pages/_error.js",
-    "revision": "b448db5961774405abfa"
+    "url": "/_next/static/OzFtY7iB8VgY-tUbS-mow/pages/_error.js",
+    "revision": "5b0c8ce6910cc120d6f2"
   },
   {
-    "url": "/_next/static/-JN4rWtCeDpbXiKL3gz8r/pages/index.js",
-    "revision": "95d06daf21d9477cd014"
+    "url": "/_next/static/OzFtY7iB8VgY-tUbS-mow/pages/index.js",
+    "revision": "3be6d6e3ac7ff7f0bdc6"
   },
   {
     "url": "/_next/static/chunks/04973f46.c4a6afef92e8dd991da1.js",
     "revision": "79bb85bae48ff4fcf81f"
   },
   {
-    "url": "/_next/static/chunks/4bb0526fb53db4881ddff9e5f6c2fe74c6c41fc2.bffb6f5b8a05970a450a.js",
-    "revision": "2c0b7fcd56134b3adc25"
+    "url": "/_next/static/chunks/26e32e5c641439efe62adc1871e49a1aa6fc082e.5896e5322bbc7333d5df.js",
+    "revision": "6942c86125c249e3b468"
   },
   {
-    "url": "/_next/static/chunks/9ed6c5f6445e13ca32875139e54e62a06e9d668e.5c3e501855b9f7c895a5.js",
-    "revision": "7296a37bd22e57c35307"
+    "url": "/_next/static/chunks/c3da85a4bd745b9c6912b099f947a3027812a8df.b1d376c125baf89b6d06.js",
+    "revision": "98ff040d224f441117f4"
   },
   {
     "url": "/_next/static/chunks/commons.9320dc8dfeffd0a94a07.js",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "revision": "79bb85bae48ff4fcf81f"
   },
   {
-    "url": "/_next/static/runtime/main-08663f62cce3f5fac47d.js",
-    "revision": "a857ce8bc6e558d1110a"
+    "url": "/_next/static/runtime/main-6f01a9164da867bce483.js",
+    "revision": "84d449b13bd820a14d59"
   },
   {
     "url": "/_next/static/runtime/polyfills-46552457ef8ae77d40aa.js",
