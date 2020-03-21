@@ -3,17 +3,19 @@ import "../../static/index.css";
 import SnackList from "../../components/SnackList";
 import PageTitle from "../../components/PageTitle";
 import startCase from "lodash/startCase";
+import replace from "lodash/replace";
 
 const Category = ({ snacks }) => {
   const router = useRouter();
   const { category } = router.query;
+  const decodedCategory = replace(category, "+", " ");
 
   return (
     <>
-      <PageTitle>{startCase(category)}</PageTitle>
+      <PageTitle>{startCase(decodedCategory)}</PageTitle>
       <SnackList
         snacks={snacks.filter(
-          snack => snack.Category.toLowerCase() === category
+          snack => snack.Category.toLowerCase() === decodedCategory
         )}
       />
     </>
