@@ -15,9 +15,9 @@ const Index = ({ snacks }) => (
           <div className="mb-8">
             <div className="text-gray-900 font-bold text-xl mb-2">{Category}</div>
             <p className="text-gray-700 text-base">{Text}</p>
-            <p className="text-sm text-gray-600 flex items-center">
+            <a className="text-sm text-gray-600 flex items-center" href={URL} target="_blank">
               {URL}
-            </p>
+            </a>
           </div>
           <div className="flex items-center">
             <div className="text-sm">
