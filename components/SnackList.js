@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const SnackList = ({ snacks, searchTerm }) => {
+  const [clipboardStatus, setClipboardStatus] = useState("");
+
   const share = (title, url) => {
     if (navigator.share) { 
       navigator.share({title, url}).then(
@@ -9,8 +11,26 @@ const SnackList = ({ snacks, searchTerm }) => {
       ).catch(
         e => console.error(e)
       )
+    } else {
+      console.log("copied URL to clipboard")
+      copyToClipboard(url)
     }
   }
+
+  const copyToClipboard = str => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    setClipboardStatus(str)
+    setTimeout(() => setClipboardStatus(""), 3000)
+  };
+
   return (
     <>
       {snacks
@@ -65,7 +85,13 @@ const SnackList = ({ snacks, searchTerm }) => {
                 </div>
               </div>
 
-              <button onClick={() => {share(Headline, URL)}}>Share!</button>
+              <button onClick={() => {share(Headline, URL)}}>
+                {clipboardStatus != URL && 
+                <span>Share!</span>}
+                {clipboardStatus == URL &&
+                  <span>URL wurde in die Zwischenablage kopiert</span>
+                }
+              </button>
             </div>
           </div>
         ))}
