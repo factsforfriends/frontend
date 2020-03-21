@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "next-pwa-boilerplate",
-  "alias": ["next-pwa-boilerplate"],
+  "name": "flattenandflausch",
+  "alias": ["flattenandflausch"],
   "builds": [{ "src": "package.json", "use": "@now/next" }],
   "routes": [
     {
