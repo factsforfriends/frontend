@@ -32,6 +32,11 @@ const Nav = () => (
           <a href="/">{title}</a>
         </H1>
       </Link>
+      <Link as={`/impressum`} href={`/impressum`}>
+        <H1>
+          <a href="/impressum">Impressum</a>
+        </H1>
+      </Link>
       <Credits
         href="https://github.com/flattenandflausch/frontend"
         rel="noopener noreferrer"
