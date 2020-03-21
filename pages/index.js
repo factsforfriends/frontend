@@ -20,7 +20,12 @@ const Index = ({ snacks }) => {
         />
   
       {snacks.filter(snack => {
-        if (!inputState || snack.Tags.toLowerCase().includes(inputState.toLowerCase())) return snack
+        if (
+          !inputState || 
+          snack.Category.toLowerCase().includes(inputState.toLowerCase()) ||
+          snack.Tags.toLowerCase().includes(inputState.toLowerCase()) ||
+          snack.Location.toLowerCase().includes(inputState.toLowerCase())
+          ) return snack
       }).map(({Category, Text, URL, Tags, Medium, Location}) => (
         <div style={{margin: "2em 0"}} className="max-w-sm w-full lg:max-w-full lg:flex">
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -33,9 +38,14 @@ const Index = ({ snacks }) => {
             </div>
             <div className="flex items-center">
               <div className="text-sm">
-              {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{Category.toLowerCase()}</span> */}
+                {Category.split(" ").map(category => (
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{category.toLowerCase()}</span>
+                ))}
                 {Tags.split(" ").map(tag => (
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag.toLowerCase()}</span>
+                ))}
+                {Location.split(" ").map(location => (
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{location.toLowerCase()}</span>
                 ))}
               </div>
             </div>
