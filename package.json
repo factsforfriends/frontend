@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "build": "next build",
+    "build-docs": "next build && next export -o docs",
     "deploy": "now --target production",
     "dev": "next",
     "start": "next start"
