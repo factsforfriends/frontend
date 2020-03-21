@@ -19,7 +19,7 @@ const Index = ({ snacks }) => {
         onChange={event => setInputState(event.target.value)}
         placeholder="Suche.."
       />
-      <SnackList snacks={snacks} searchTerm={inputState} />
+      <SnackList snacks={snacks} searchTerm={inputState} isOverview />
     </>
   );
 };
