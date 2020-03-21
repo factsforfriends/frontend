@@ -1,13 +1,5 @@
-# Next.js PWA Boilerplate
-
-Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score. To see this in action, open [the website](https://next-pwa-boilerplate.now.sh) with Chrome, go to the “Audits” tab in dev tools, and click “Run audit”.
-
-## Technologies Used
-
-- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Styled Components](https://www.styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress
-- [Next.js](https://nextjs.org/) - A minimalistic framework for server-rendered React applications
-- [ZEIT Now 2](https://zeit.co/now) for hosting the app on the web with auto-scaling, auto-renewing of SSL certs, and the ability to add any lambda functions in any other language
+# flattenandflausch - Frontend 
+add description here
 
 ## Run locally
 
@@ -35,3 +27,11 @@ Must have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) a
 ### Deploy
 
 `npm run deploy`
+
+
+## Technologies Used
+
+- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Styled Components](https://www.styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress
+- [Next.js](https://nextjs.org/) - A minimalistic framework for server-rendered React applications
+- [ZEIT Now 2](https://zeit.co/now) for hosting the app on the web with auto-scaling, auto-renewing of SSL certs, and the ability to add any lambda functions in any other language
