@@ -1,19 +1,20 @@
 import fetch from "isomorphic-unfetch";
 import PageTitle from "../components/PageTitle";
 import "../static/index.css";
+import { readString } from 'react-papaparse'
 
-const Index = ({ posts }) => (
+const Index = ({ snacks }) => (
   <>
     <PageTitle>Kategorien</PageTitle>
     <p className="text-blue-600 my-5">Add some description here</p>
 
     <ul className="p-5 shadow rounded list-none bg-orange-100">
-      {posts.map(({ id, title }) => (
+      {snacks.map((snack) => (
         <li
           className="rounded border-2 p-2 border-blue-500 hover:border-red-500 my-5"
-          key={id}
+          // key={id}
         >
-          {title}
+          {snack}
         </li>
       ))}
     </ul>
@@ -21,11 +22,12 @@ const Index = ({ posts }) => (
 );
 
 Index.getInitialProps = async function() {
-  const fetchPosts = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await fetchPosts.json();
+  const fetchSnacks = await fetch("https://raw.githubusercontent.com/flattenandflausch/frontend/master/data/data.csv");
+  const snacksPlain = await fetchSnacks.text();
+  const snacks = readString(snacksPlain).data;
 
   return {
-    posts
+    snacks
   };
 };
 

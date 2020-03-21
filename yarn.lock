@@ -4563,6 +4563,11 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
+papaparse@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.1.1.tgz#1da66a039f80e2db43a1226b0bf44106451e9a2d"
+  integrity sha512-KPkW4GNQxunmYTeJIjHFrvilcNuHBWrfgbyvmagEmfGOA4hnP1WIkPbv4yABhj1Nam3as4w+7MBiI27BntwqVg==
+
 parallel-transform@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parallel-transform/-/parallel-transform-1.2.0.tgz#9049ca37d6cb2182c3b1d2c720be94d14a5814fc"
@@ -5381,6 +5386,14 @@ react-is@^16.6.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-papaparse@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-papaparse/-/react-papaparse-3.0.0.tgz#e11aa4c87ebca8f510749f5c7470fd876813b9f3"
+  integrity sha512-EGVk5kKb8VNcbb/P+veCGIPiPVwgPkwFDQ0hT32mjdC90SuK+cqfg0fkeWB+t3S9DFEzGlv3HgEqnzTmTuG2lA==
+  dependencies:
+    papaparse "^5.1.1"
+    prop-types "^15.7.2"
 
 react@^16.8.6:
   version "16.13.1"
