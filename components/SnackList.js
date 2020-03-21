@@ -56,6 +56,23 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
               ? `${categoryWithReplacedWhiteSpace}/snacks`
               : `/snacks/${ID}`;
 
+            const overviewCategoryPrefix =
+              isOverview && Category ? (
+                <div className=" border-b border-gray-400 w-full mb-2 pb-2">
+                  <span className="text-gray-900 font-bold text-xl mb-2">
+                    {Category}
+                  </span>
+                </div>
+              ) : null;
+
+            const nonOverviewHeadlineClassname = isOverview
+              ? ""
+              : "text-gray-900 font-bold text-xl mb-2";
+
+            const overviewHeadlinePrefix = isOverview ? (
+              <span className="text-xs text-gray-600">Letzte Meldung: </span>
+            ) : null;
+
             return (
               <div
                 style={{ margin: "2em 0" }}
@@ -63,9 +80,15 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
               >
                 <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                   <div className="mb-8">
-                    <div className="text-gray-900 font-bold text-xl mb-2">
+                    <div>
                       <Link href={dynamicHref} as={dynamicHref} passHref>
-                        <a href={dynamicHref}>{Headline}</a>
+                        <a href={dynamicHref}>
+                          {overviewCategoryPrefix}
+                          <span className={nonOverviewHeadlineClassname}>
+                            {overviewHeadlinePrefix}
+                            <span className="font-bold">{Headline}</span>
+                          </span>
+                        </a>
                       </Link>
                     </div>
                     <p className="text-gray-700 text-base">{Snack}</p>

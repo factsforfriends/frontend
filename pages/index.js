@@ -3,9 +3,17 @@ import PageTitle from "../components/PageTitle";
 import SnackList from "../components/SnackList";
 import "../static/index.css";
 import React, { useState } from "react";
+import some from "lodash/some";
 
 const Index = ({ snacks }) => {
   const [inputState, setInputState] = useState("");
+
+  const categoriesWithLatestSnack = [];
+  snacks.forEach(snack => {
+    if (!some(categoriesWithLatestSnack, ["Category", snack.Category])) {
+      categoriesWithLatestSnack.push(snack);
+    }
+  });
 
   return (
     <>
@@ -19,7 +27,11 @@ const Index = ({ snacks }) => {
         onChange={event => setInputState(event.target.value)}
         placeholder="Suche.."
       />
-      <SnackList snacks={snacks} searchTerm={inputState} isOverview />
+      <SnackList
+        snacks={categoriesWithLatestSnack}
+        searchTerm={inputState}
+        isOverview
+      />
     </>
   );
 };
