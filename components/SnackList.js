@@ -1,6 +1,15 @@
 import React from "react";
 
 const SnackList = ({ snacks, searchTerm }) => {
+  const share = (title, url) => {
+    if (navigator.share) { 
+      navigator.share({title, url}).then(
+        () => console.log("shared")
+      ).catch(
+        e => console.error(e)
+      )
+    }
+  }
   return (
     <>
       {snacks
@@ -52,6 +61,8 @@ const SnackList = ({ snacks, searchTerm }) => {
                   ))}
                 </div>
               </div>
+
+              <button onClick={() => {share(Headline, URL)}}>Share!</button>
             </div>
           </div>
         ))}
