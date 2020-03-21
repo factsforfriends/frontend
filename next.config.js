@@ -34,8 +34,7 @@ const nextConfig = {
     ]
   },
   exportPathMap: () => ({
-    "/": { page: "/" },
-    "/page1": { page: "/page1" }
+    "/": { page: "/" }
   }),
   assetPrefix: assetPrefix,
   webpack: config => {
