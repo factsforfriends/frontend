@@ -93,7 +93,7 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
                   </div>
                 </div>
 
-                <button onClick={() => {share(Headline, URL)}}>
+                <button style={{margin: "15px 5px"}} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => {share(Headline, URL)}}>
                   {clipboardStatus != URL && 
                   <span>Share!</span>}
                   {clipboardStatus == URL &&
