@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-export const title = "Next.js PWA Boilerplate";
+export const title = "flattenandflausch";
 const description =
   "Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score.";
 const url = `https://next-pwa-boilerplate.now.sh`;

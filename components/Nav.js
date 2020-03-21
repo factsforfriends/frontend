@@ -33,7 +33,7 @@ const Nav = () => (
         </H1>
       </Link>
       <Credits
-        href="https://github.com/pingboard/next-pwa-boilerplate"
+        href="https://github.com/flattenandflausch/frontend"
         rel="noopener noreferrer"
         target="_blank"
       >
