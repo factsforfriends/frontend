@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const SnackList = ({ snacks, searchTerm }) => {
   const share = (title, url) => {
@@ -30,7 +31,9 @@ const SnackList = ({ snacks, searchTerm }) => {
             <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div className="mb-8">
                 <div className="text-gray-900 font-bold text-xl mb-2">
-                  {Headline}
+                  <Link href={`${Category.toLowerCase()}/snacks`}>
+                    {Headline}
+                  </Link>
                 </div>
                 <p className="text-gray-700 text-base">{Snack}</p>
                 <a
