@@ -1,6 +1,6 @@
 import fetch from "isomorphic-unfetch";
 import PageTitle from "../components/PageTitle";
-import "../index.css";
+import "../static/index.css";
 
 const Index = ({ posts }) => (
   <>
