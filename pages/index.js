@@ -7,23 +7,29 @@ const Index = ({ snacks }) => (
     <PageTitle>Kategorien</PageTitle>
     <p className="text-blue-600 my-5">Add some description here</p>
 
-    <ul className="p-5 shadow rounded list-none bg-orange-100">
-      {snacks.map(({Category, Text, URL}) => (
-        <li
-          className="rounded border-2 p-2 border-blue-500 hover:border-red-500 my-5"
-          // key={id}
-        >
-          <h1>{Category}</h1>
-          <p>{Text}</p>
-          <div>{URL}</div>
-          <div class="px-6 py-4">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{Category}</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#tag2</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#tag3</span>
+    {snacks.map(({Category, Text, URL, Tags, Medium, Location}) => (
+      <div className="max-w-sm w-full lg:max-w-full lg:flex snack-card">
+        <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
+        </div>
+        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div className="mb-8">
+            <div className="text-gray-900 font-bold text-xl mb-2">{Category}</div>
+            <p className="text-gray-700 text-base">{Text}</p>
+            <p className="text-sm text-gray-600 flex items-center">
+              {URL}
+            </p>
           </div>
-        </li>
+          <div className="flex items-center">
+            <div className="text-sm">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{Category}</span>
+              {Tags.split(" ").map(tag => (
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
       ))}
-    </ul>
   </>
 );
 
