@@ -3,6 +3,7 @@ import "../../static/index.css";
 import find from "lodash/find";
 import toInteger from "lodash/toInteger";
 import PageTitle from "../../components/PageTitle";
+import { DATA_URL } from "../../constants/urls";
 
 const SnackDetail = ({ snacks }) => {
   const router = useRouter();
@@ -33,9 +34,7 @@ const SnackDetail = ({ snacks }) => {
 export default SnackDetail;
 
 SnackDetail.getInitialProps = async function() {
-  const fetchSnacks = await fetch(
-    "https://raw.githubusercontent.com/flattenandflausch/frontend/master/data/data.json"
-  );
+  const fetchSnacks = await fetch(DATA_URL);
   const snacks = await fetchSnacks.json();
 
   return {

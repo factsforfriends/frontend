@@ -1,6 +1,8 @@
 import fetch from "isomorphic-unfetch";
 import PageTitle from "../components/PageTitle";
 import SnackList from "../components/SnackList";
+import { DATA_URL } from "../constants/urls";
+
 import "../static/index.css";
 import React, { useState } from "react";
 import some from "lodash/some";
@@ -45,9 +47,7 @@ const Index = ({ snacks }) => {
 };
 
 Index.getInitialProps = async function() {
-  const fetchSnacks = await fetch(
-    "https://raw.githubusercontent.com/flattenandflausch/frontend/master/data/data.json"
-  );
+  const fetchSnacks = await fetch(DATA_URL);
   const snacks = await fetchSnacks.json();
 
   return {

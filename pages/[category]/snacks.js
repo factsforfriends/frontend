@@ -4,6 +4,7 @@ import SnackList from "../../components/SnackList";
 import PageTitle from "../../components/PageTitle";
 import startCase from "lodash/startCase";
 import replace from "lodash/replace";
+import { DATA_URL } from "../../constants/urls";
 
 const Category = ({ snacks }) => {
   const router = useRouter();
@@ -25,9 +26,7 @@ const Category = ({ snacks }) => {
 export default Category;
 
 Category.getInitialProps = async function() {
-  const fetchSnacks = await fetch(
-    "https://raw.githubusercontent.com/flattenandflausch/frontend/master/data/data.json"
-  );
+  const fetchSnacks = await fetch(DATA_URL);
   const snacks = await fetchSnacks.json();
 
   return {
