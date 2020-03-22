@@ -139,7 +139,8 @@ const SnackListElement = ({
         borderLeft: "5px solid #F6E05E",
         marginLeft: "10px",
         padding: "10px",
-        marginBottom: "10px"
+        marginBottom: "10px",
+        wordWrap: "break-word"
       }}
     >
       Quelle: {URL}
