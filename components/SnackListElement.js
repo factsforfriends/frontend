@@ -8,7 +8,8 @@ const SnackListElement = ({
   snack,
   isOverview,
   clipboardStatus,
-  isMinimalView
+  isMinimalView,
+  copyToClipboard
 }) => {
 
   const sharePicRef = useRef();

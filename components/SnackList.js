@@ -68,6 +68,7 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
             snack={snack}
             isOverview={isOverview}
             clipboardStatus={clipboardStatus}
+            copyToClipboard={copyToClipboard}
             share={share}
             isMinimalView={isMinimalView}
           />
