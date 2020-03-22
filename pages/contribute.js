@@ -28,9 +28,16 @@ const Contribute = () => {
         hochgeladen.
       </p>
       <p>
-        <span className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          <Link href="https://forms.gle/ZFFhxaJdoQYKRfvy5">HIER geht es zum Einreichen eines neuen Fact-Snacks</Link>
-        </span>
+        <a class="text-sm text-gray-600 flex items-center" href="https://forms.gle/ZFFhxaJdoQYKRfvy5" target="_blank" rel="noopener noreferrer" 
+          style={{
+            borderLeft: "5px solid #F6E05E",
+            marginLeft: "10px",
+            padding: "10px",
+            marginBottom: "10px"
+          }}
+        >
+        HIER geht es zum Einreichen eines neuen Fact-Snacks
+        </a>
       </p>
     </>
   );
