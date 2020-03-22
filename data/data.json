@@ -15,7 +15,7 @@
     "Medium": "artikel",
     "Headline": "Geheimplan",
     "Category": "Alltag Politik",
-    "Tags": "regierung geheimplan deutschland",
+    "Tags": "regierung geheimplan",
     "Snack": "In einem Artikel wird behauptet, dass ein Geheimplan der Regierung zur Corona-Krise entdeckt wurde. Recherchen von “Correctiv” haben ergeben, dass dies nicht stimmt. Der Plan, von dem der Artikel handelt, ist eine Risikoanalyse für ein ausgedachtes Virus. Das Dokument ist auch nicht geheim, sondern frei zugänglich.",
     "URL": "https://correctiv.org/faktencheck/2020/03/18/coronavirus-um-was-es-bei-dem-angeblichen-geheimplan-der-regierung-2012-wirklich-ging"
   },
@@ -27,7 +27,7 @@
     "Category": "",
     "Tags": "desinfektionsmittel",
     "Snack": "Auf Facebook wird behauptet, dass das Coronavirus schon seit Jahren bekannt sei, weil auf älteren Desinfektionsmittelflaschen steht, dass sie gegen Coronaviren helfen. Der Faktencheck von “Correctiv” hat das nachgeprüft. Es stimmt zwar, dass das auf den Flaschen steht, doch damit ist die Familie der Coronaviren gemeint. Das Virus, mit dem wir es zur Zeit zu tun haben gehört zu dieser Familie, aber er ist ein neuartiges Virus, das vollständig SARS-CoV-2 heißt.",
-    "URL": "https://correctiv.org/faktencheck/2020/03/20/nein-29-000-us-soldaten-sind-nicht-immun-gegen-das-coronavirus"
+    "URL": "https://correctiv.org/faktencheck/2020/03/13/coronavirus-steht-auf-desinfektionsmitteln-weil-die-viren-familie-schon-seit-jahrzehnten-bekannt-ist"
   },
   {
     "ID": 4,
@@ -51,13 +51,13 @@
   },
   {
     "ID": 6,
-    "Location": "deutschland",
+    "Location": "schleswig-holstein",
     "Medium": "facebook",
     "Headline": "Kein Ansturm auf Aldi-Filiale wegen Coronavirus",
     "Category": "Alltag Hamsterkäufe",
     "Tags": "aldi stürmen panik Sturm",
     "Snack": "In den Sozialen Medien wird ein Video verbreitet, das angeblich zeigt, wie Menschen eine Aldi-Filiale stürmen. Dieses Video hat nichts mit der Corona-Epidemie zu tun. Laut dem Faktencheck von “Correctiv” stammt es aus dem Jahr 2011. Damals löste ein Sonderverkauf für Laptops den Ansturm aus.",
-    "URL": "https://correctiv.org/faktencheck/2020/03/16/coronavirus-keine-belege-dass-ibuprofen-eine-erkrankung-verschlimmert"
+    "URL": "https://correctiv.org/faktencheck/2020/03/05/video-diese-menschen-stuermten-aldi-nicht-wegen-des-coronavirus-sondern-wegen-laptops"
   },
   {
     "ID": 7,
@@ -76,7 +76,7 @@
     "Headline": "Chlordioxid: Gift, kein Heilmittel",
     "Category": "Krankheit Medikamente",
     "Tags": "Chlordioxid MMS Medikament Heilmittel",
-    "Snack": "Immer wieder wird als Heilmittel gegen das Coronavirus Chlordioxid oder “Miracle Mineral Supplement” (MMS) empfohlen. Auch gegen zahlreiche andere Krankheiten sollen diese Chemikalien helfen. In Wahrheit sind sie jedoch Gesundheitsschädlich. Bei MMS handelt um Natriumchlorit, das im Körper ebenfalls zu Chlordioxid abgebaut wird. Die Chemikalie ist stark ätzend und wird normalerweise als Bleiche oder Desinfektionsmittel verwendet. Auf der Homepage von SWR3 werden dieser und weitere Corona-Mythen widerlegt.",
+    "Snack": "Immer wieder wird Chlordioxid oder “Miracle Mineral Supplement” (MMS) als Heilmittel gegen das Coronavirus empfohlen. In Wahrheit sind sie jedoch gesundheitsschädlich. MMS besteht aus Natriumchlorit, das im Körper zu Chlordioxid abgebaut wird. Die Chemikalie ist stark ätzend und wird normalerweise als Bleiche oder Desinfektionsmittel verwendet. Auf der Homepage von SWR3 werden dieser und weitere Corona-Mythen widerlegt.",
     "URL": "https://www.swr3.de/aktuell/Diese-Meldungen-sind-Fake-News-von-Coronavirus-bis-Volkmarsen/-/id=4382120/did=4840638/1x5o4tu/index.html"
   },
   {
@@ -86,7 +86,7 @@
     "Headline": "Gefälschte RKI-Empfehlung",
     "Category": "Krankheit Ansteckung",
     "Tags": "Alkohol RKI Robert-Koch-Institut Bier",
-    "Snack": "Auf WhatsApp kursiert aktuell ein Foto, das eine angebliche Mitteilung des Robert-Koch-Instituts (RKI) zeigt. Angeblich wirbt das RKI ausdrücklich für den erhöhten Verzehr von Alkohol. Bis zu fünf Bier am Tag sollen helfen, den Mund- und Rachenraum zu desinfizieren. Wer mehr verträgt, solle sogar mehr zu sich nehmen. Bei diesem Bild handelt es sich um einen Fake. Das Bundesamt für Risikobewertung bestätigt zwar die empfindliche Wirkung von Alkohol auf Viren, gemeint ist aber die Desinfektion von Händen und öffentlich genutzten Flächen mithilfe von Alkohol.",
+    "Snack": "Auf WhatsApp kursiert aktuell ein Foto, das eine angebliche Mitteilung des Robert-Koch-Instituts (RKI) zeigt. Angeblich wirbt das RKI ausdrücklich für den erhöhten Verzehr von Alkohol. Bis zu fünf Bier am Tag sollen helfen, den Mund- und Rachenraum zu desinfizieren. Wer mehr verträgt, solle sogar mehr trinken. Bei diesem Bild handelt es sich um einen Fake. Das Bundesamt für Risikobewertung bestätigt zwar die empfindliche Wirkung von Alkohol auf Viren, gemeint ist aber die Desinfektion von Händen und öffentlich genutzten Flächen mithilfe von Alkohol.",
     "URL": "https://www.mimikama.at/allgemein/robert-koch-institut-in-der-fastenzeit-auf-alkohol-zu-verzichten-faktencheck/ https://www.rnd.de/gesundheit/alkohol-totet-coronaviren-drei-fakten-zu-corona-und-was-dagegen-hilft-BCGK6ZDAWVDI5M5YMHHPYK6DIY.html"
   },
   {
@@ -96,7 +96,7 @@
     "Headline": "Wasser trinken schützt nicht vor Ansteckung",
     "Category": "Krankheit Ansteckung",
     "Tags": "Wasser",
-    "Snack": "In einem Facebook-Post vom 16.März wird behauptet, dass das Coronavirus vier Tage in der Kehle bleibt, bis es die Lunge erreicht. Zwar ist es allgemein förderlich für die Gesundheit, ausreichend zu trinken, eine Corona-Infektion kann damit jedoch nicht verhindert werden. Correctiv stellt klar: weder trinken noch gurgeln können das Coronavirus abtöten oder die Erkrankung eindämmen.",
+    "Snack": "In einem Facebook-Post vom 16.März wird behauptet, dass das Coronavirus vier Tage in der Kehle bleibt, bis es die Lunge erreicht. Zwar ist es gut für die Gesundheit, ausreichend zu trinken, eine Corona-Infektion kann damit jedoch nicht verhindert werden. Correctiv stellt klar: Weder trinken, noch gurgeln können das Coronavirus abtöten oder die Erkrankung eindämmen.",
     "URL": "https://correctiv.org/faktencheck/2020/03/20/wassertrinken-und-gurgeln-halten-das-coronavirus-nicht-auf"
   },
   {
@@ -136,8 +136,18 @@
     "Headline": "Roman hat Corona nicht vorausgesagt",
     "Category": "Alltag",
     "Tags": "roman Koontz voraussage",
-    "Snack": "Auf Facebook ist immer wieder von einem Buch die Rede, das den Virus voraussagt. Der Roman “The Eyes of Darkness” von Dean R. Koontz ist im Jahr 1981 erschienen und soll den Ausbruch des Virus genau beschreiben. Die Faktchecker von “mimikama” haben sich die entsprechenden Stellen im Roman genauer angeschaut. Es gibt tatsächlich einzelne Übereinstimmungen, wie den Ausbruchsort des Virus Wuhan. Aber die anderen Daten stimmen nicht mit der Realität überein.",
+    "Snack": "Auf Facebook ist immer wieder von einem Buch die Rede, das den Virus voraussagt. Der Roman “The Eyes of Darkness” von Dean R. Koontz ist im Jahr 1981 erschienen und soll den Ausbruch des Virus genau beschreiben. Die Faktchecker von “Mimikama” haben sich die entsprechenden Stellen im Roman genauer angeschaut. Es gibt tatsächlich einzelne Übereinstimmungen, wie den Ausbruchsort des Virus Wuhan. Aber die anderen Daten stimmen nicht mit der Realität überein.",
     "URL": "https://www.mimikama.at/allgemein/schrieb-dean-koontz-ueber-den-neuen-coronavirus-faktencheck/"
+  },
+  {
+    "ID": 15,
+    "Location": "weltweit",
+    "Medium": "",
+    "Headline": "Zwiebeln ziehen Viren nicht an",
+    "Category": "Krankheit Ansteckung",
+    "Tags": "zwiebel anziehen",
+    "Snack": "Zwiebeln ziehen Coronaviren nicht an. Die Faktenckecker von der Tagesschau haben anderweitige Behauptungen wiederlegt.",
+    "URL": "https://www.tagesschau.de/faktenfinder/faktencheck-coronavirus-mythen-101.html"
   }
  ]
  
