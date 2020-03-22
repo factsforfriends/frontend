@@ -17,6 +17,11 @@ const H3 = styled.h3`
 const H5 = styled.h5`
   font-size: 1.25rem;
   transform: translateX(-0.15rem);
+  margin-top: 15px;
+`;
+
+const P = styled.p`
+  margin-top: 15px;
 `;
 
 const Contribute = () => {
@@ -70,7 +75,7 @@ const Contribute = () => {
           Nachrichtenquellen oder der Wikipedia?
         </li>
       </ol>
-      <p>
+      <P>
         Quelle für diese Anleitung sind die verlinkten Studien und Texte der{" "}
         <Link href="https://www.semanticscholar.org/paper/Lateral-Reading%3A-Reading-Less-and-Learning-More-Wineburg-McGrew/5b269628f4dc29b514dfcb0b5e429e49fc0dae6d">
           Stanford History Education Group
@@ -80,8 +85,8 @@ const Contribute = () => {
           Max-Planck-Institute for Human Development et al.
         </Link>{" "}
         und des <Link href="https://newslit.org/">News Literacy Project</Link>.
-      </p>
-      <H3 id="zehn-schritte"></H3>
+      </P>
+      <H3 id="zehn-schritte">Zehn Schritte gegen die Panik</H3>
       <p>Viele von uns fühlen sich von der aktuellen Situation überfordert. Unser Alltag hat sich grundsätzlich gewandelt, wir müssen uns auf eine ganz neue Situation einstellen. Als Einzelpersonen, als Familien und Freund:innen und als Gesellschaft. Hinzu kommt eine Flut von Informationen. Dabei ist nicht nur die Menge der Informationen eine Herausforderung. Sondern auch, dass die Gewissheiten von gestern heute vielleicht schon nicht mehr gültig sind. Hinzu kommt die Sorge um unsere eigene körperliche Unversehrtheit sowie die unserer Eltern, Kinder, Großeltern, Verwandten, Freund:innen, Kolleg:innen und liebgewonnen Nachbarn. Um in dieser Situation die Ruhe zu bewahren, gibt es hier 10 Punkte gegen die Panik: <Link href="http://www.dirkvongehlen.de/netz/gegen-die-corona-panik">www.dirkvongehlen.de/netz/gegen-die-corona-panik</Link></p>
       <ol
         class="list-decimal"
@@ -118,7 +123,9 @@ const Contribute = () => {
               Die meisten von uns verbreiten Falschnachrichten nicht in böser Absicht. Vielmehr tun wir oft aus Sorge um oder Fürsorge für andere, weil wir helfen wollen. Die größte Hilfe aber ist es, keine Angst und Panik zu verbreiten.
         </li>
       </ol>
-      <p>Diese 10 Punkte sind eine leicht überarbeitete Version der Texte von <Link href="http://www.dirkvongehlen.de/netz/gegen-die-corona-panik/">Dirk von Gehlen</Link> und <Link href="https://www.sueddeutsche.de/medien/coronavirus-informationstipps-1.4846836">Klaus Ott</Link>. Vielen Dank fürs zur Verfügung stellen!</p>
+      <P>
+      Diese 10 Punkte sind eine leicht überarbeitete Version der Texte von <Link href="http://www.dirkvongehlen.de/netz/gegen-die-corona-panik/">Dirk von Gehlen</Link> und <Link href="https://www.sueddeutsche.de/medien/coronavirus-informationstipps-1.4846836">Klaus Ott</Link>. Vielen Dank fürs zur Verfügung stellen!
+      </P>
       <H3 id="mythen-entlarven">Wie entlarve ich Mythen?</H3>
       <p>Die Entlarvung von Mythen ist nicht ganz einfach. Es braucht viel Sorgfalt, wenn man versucht, Fehlinformationen zu widerlegen. Denn sonst kann es passieren, dass unbeabsichtigt genau die Mythen bestärkt werden, die man korrigieren möchte. Ein Grund dafür ist der sog. Familiarity-Backfire Effekt: Um eine Falschnachricht zu widerlegen, muss man sie erst einmal ansprechen - woher sollte die andere Person sonst wissen, worüber du redest? Doch wenn eine Falschnachricht für Faktenchecks immer wieder wiederholt wird, macht das Menschen mit dieser Nachricht so vertraut, dass sie sie für glaubwürdig halten, einfach weil sie ihnen bekannt vorkommt. Um diese und andere Boomerang-Effekte zu vermeiden, sind drei Hauptelemente für eine wirksame Korrektur erforderlich: Erstens muss sich die Widerlegung auf die Fakten und nicht auf den Mythos konzentrieren. So kann man vermeiden, dass die Fehlinformationen noch vertrauter werden. Zweitens sollte vor jeder Erwähnung eines Mythos eine ausdrückliche Warnung stehen, um Leser:innen darauf hinzuweisen, dass die folgende Information falsch ist. Schließlich sollte die Widerlegung eine alternative Erklärung enthalten, die wichtige Eigenschaften der ursprünglichen Fehlinformation erklärt.</p>
       <H5>Aufbau einer erfolgreichen Entlarvung</H5>
@@ -130,8 +137,12 @@ const Contribute = () => {
           <li style={{paddingTop: "15px"}}><strong>Alternative Erklärung:</strong> Alle Lücken, die durch das Debunking entstehen, müssen geschlossen werden. Zum Beispiel durch eine alternative kausale Erklärung dafür, warum der Mythos falsch ist. Dient ein Mythos dazu, ein tatsächlich eingetretenes Ereignis zu erklären, sollte die tatsächliche Ursache genannt werden. Das kann um eine Erläuterung ergänzt werden, warum die Fehlinformation überhaupt in die Welt gesetzt wurde. Wird eine solche alternative Erklärung nicht geliefert, greifen Menschen häufig lieber auf eine falsche Erklärung zurück, als gar keine zu haben.</li>
           <li style={{paddingTop: "15px"}}><strong>Grafik:</strong> Kernfakten sollten nach Möglichkeit grafisch dargestellt werden. Grafisch dargestellte Informationen werden weniger häufig falsch aufgefasst als Text.</li>
       </ul>
-      <p><strong>Außerdem zu berücksichtigen:</strong> Menschen lassen sich nicht gerne von Dingen überzeugen, die ihrer persönlichen Weltanschauung widersprechen (Worldview-Backfire-Effekt). Werden ihnen Pro- und Contra-Argumente präsentiert, suchen sie sich eher die Argumente aus, die zu ihrer Einstellung passen. Überwiegen Argumente, die der eigenen Einstellung zuwiderlaufen, kann das Leute in ihrer Ansicht sogar noch bestärken. Sie suchen dann nämlich noch intensiver nach Argumenten, die ihre Ansicht bestätigen. Deshalb sollte sich die Entlarvung eines Mythos eher an diejenigen richten, die nicht vollkommen überzeugt von dessen Richtigkeit sind. Außerdem kann es hilfreich sein, Fakten und Argumente so zu präsentieren, dass sie nicht sofort als Bedrohung für die Weltanschauung der Empfänger:innen erscheinen.</p>
-      <p>Die hier zusammengefassten Informationen stammen gekürzt, übersetzt und überarbeitet aus dem <Link href="https://skepticalscience.com/docs/Debunking_Handbook.pdf">Debunking Handbook</Link>, das uns Stephan Lewandowsky zur Verfügung gestellt hat.</p>
+      <P>
+        <strong>Außerdem zu berücksichtigen:</strong> Menschen lassen sich nicht gerne von Dingen überzeugen, die ihrer persönlichen Weltanschauung widersprechen (Worldview-Backfire-Effekt). Werden ihnen Pro- und Contra-Argumente präsentiert, suchen sie sich eher die Argumente aus, die zu ihrer Einstellung passen. Überwiegen Argumente, die der eigenen Einstellung zuwiderlaufen, kann das Leute in ihrer Ansicht sogar noch bestärken. Sie suchen dann nämlich noch intensiver nach Argumenten, die ihre Ansicht bestätigen. Deshalb sollte sich die Entlarvung eines Mythos eher an diejenigen richten, die nicht vollkommen überzeugt von dessen Richtigkeit sind. Außerdem kann es hilfreich sein, Fakten und Argumente so zu präsentieren, dass sie nicht sofort als Bedrohung für die Weltanschauung der Empfänger:innen erscheinen.
+      </P>
+      <P>
+        Die hier zusammengefassten Informationen stammen gekürzt, übersetzt und überarbeitet aus dem <Link href="https://skepticalscience.com/docs/Debunking_Handbook.pdf">Debunking Handbook</Link>, das uns Stephan Lewandowsky zur Verfügung gestellt hat.
+      </P>
     </>
   );
 };
