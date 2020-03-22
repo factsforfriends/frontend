@@ -15,7 +15,9 @@ const SnackListElement = ({
   const sharePicRef = useRef();
   let image;
 
-  const share = (title, url, id) => {
+  const snackDetailLink = `${BASE_URL}/snacks/${snack.ID}`;
+
+  const share = (title, url) => {
     if (navigator.share) {
       navigator
         .share({ text: title + "\n" + url })
@@ -23,7 +25,7 @@ const SnackListElement = ({
         .catch(e => console.error(e));
     } else {
       console.log("copied URL to clipboard");
-      copyToClipboard(`${BASE_URL}/snacks/${id}`);
+      copyToClipboard(snackDetailLink);
     }
   };
 
@@ -210,8 +212,8 @@ const SnackListElement = ({
             share(Snack, URL, ID);
           }}
         >
-          {clipboardStatus != URL && <span>Share!</span>}
-          {clipboardStatus == URL && (
+          {clipboardStatus != snackDetailLink && <span>Share!</span>}
+          {clipboardStatus == snackDetailLink && (
             <span>URL wurde in die Zwischenablage kopiert</span>
           )}
         </button>
