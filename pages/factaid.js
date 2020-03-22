@@ -100,7 +100,7 @@ const Contribute = () => {
               Ich bin mir bewusst, dass derartige Nachrichtenlagen Betrüger:innen anziehen, die mit Absicht Fotomontagen und bewusste Lügen verbreiten. Deswegen poste, retweete und verbreite ich keine Bilder, Filme, Sprachnachrichten und Texte, deren Herkunft ich nicht kenne.
           </li>
           <li style={{paddingTop: "15px"}}>
-              Ich leite keine Kettenbriefe weiter, in denen fragwürdige und ungeprüfte Behauptungen aufgestellt werden. Weitere Informationen zu Massenbotschaften gibt es bei <Link href="https://www.klicksafe.de/themen/kommunizieren/whatsapp/kettenbriefe-in-whatsapp/"></Link>Klicksafe.
+              Ich leite keine Kettenbriefe weiter, in denen fragwürdige und ungeprüfte Behauptungen aufgestellt werden. Weitere Informationen zu Massenbotschaften gibt es bei <Link href="https://www.klicksafe.de/themen/kommunizieren/whatsapp/kettenbriefe-in-whatsapp/">Klicksafe</Link>.
           </li>
           <li style={{paddingTop: "15px"}}>
               Ich leite keine Fotos usw. weiter, in denen Menschen gezeigt werden, die sich (angeblich) mit dem Corona-Virus infiziert haben. Ich nenne im Netz auch keine Namen von solchen Personen. Wenn ich erfahre, dass sich in meinem Freundes- oder Bekanntenkreis jemand infiziert hat, dann ist wichtig, dass die zuständigen Ärzte und Behörden das wissen und handeln können. Ausnahmen sind hier Personen, die das selbst öffentlich gemacht haben, wie beispielsweise Cem Özdemir (Bündnis 90/die Grünen) oder Thomas Sattelberger (FDP).
