@@ -135,6 +135,12 @@ const SnackListElement = ({
       href={URL}
       target="_blank"
       rel="noopener noreferrer"
+      style={{
+        borderLeft: "5px solid #F6E05E",
+        marginLeft: "10px",
+        padding: "10px",
+        marginBottom: "10px"
+      }}
     >
       Quelle: {URL}
     </a>
@@ -191,8 +197,8 @@ const SnackListElement = ({
           {overviewCategoryPrefix}
           {isMinimalView ? sharePicWrapper : null}
           {isMinimalView ? null : headlineWithSnackElement}
-          {isMinimalView ? null : sourceElement}
         </div>
+        {sourceElement}
         {tagList}
         <button
           style={{ margin: "15px 5px" }}
