@@ -2,9 +2,48 @@ import React, { useRef } from "react";
 import replace from "lodash/replace";
 import Link from "next/link";
 import Sharepic from "./Sharepic";
+import htmlToImage from 'html-to-image';
 
-const SnackListElement = ({ snack, isOverview, clipboardStatus, share }) => {
+const SnackListElement = ({ snack, isOverview, clipboardStatus }) => {
   const sharePicRef = useRef();
+  let image;
+
+  const share = (title, url) => {
+    if (navigator.share) {
+      navigator
+        .share({ title, url })
+        .then(() => console.log("shared"))
+        .catch(e => console.error(e));
+    } else {
+      console.log("copied URL to clipboard");
+      copyToClipboard(url);
+    }
+  };
+
+  const generatePic = (node) => {
+    htmlToImage.toPng(node)
+    .then(function (dataUrl) {
+      image = dataUrl;
+    })
+    .catch(function (error) {
+      console.error('oops, something went wrong!', error);
+    });
+  }
+
+  const shareFile = (title, url) => {
+    var img = new Image();
+    img.src = image;
+
+    const shareData = { files: [img] }
+    console.log(navigator.canShare && navigator.canShare(shareData))
+
+    if (navigator.share) {
+      navigator
+        .share(shareData)
+        .then(() => console.log("shared"))
+        .catch(e => console.error(e));
+    }
+  };
 
   const { Category, Snack, URL, Tags, Medium, Location, Headline, ID } = snack;
 
@@ -98,8 +137,9 @@ const SnackListElement = ({ snack, isOverview, clipboardStatus, share }) => {
           style={{ margin: "15px 5px" }}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => {
-            share(Headline, URL);
+            // share(Headline, URL);
             console.log(sharePicRef.current.firstChild);
+            share(Headline, URL)
           }}
         >
           {clipboardStatus != URL && <span>Share!</span>}
