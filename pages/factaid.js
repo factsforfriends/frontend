@@ -11,6 +11,7 @@ const H2 = styled.h2`
 const H3 = styled.h3`
   font-size: 1.75rem;
   transform: translateX(-0.15rem);
+  margin-top: 15px;
 `;
 
 const Contribute = () => {
@@ -41,22 +42,22 @@ const Contribute = () => {
         class="list-decimal"
         style={{ paddingLeft: "20px", marginTop: "5px" }}
       >
-        <li>
+        <li style={{paddingTop: "15px"}}>
           <strong>Wer steht hinter der Information?</strong> Wer hat die
           Information ursprünglich verfasst? Handelt es sich dabei um eine
           vertrauenswürdige Quelle, Nachrichtenseite oder Person?
         </li>
-        <li>
+        <li style={{paddingTop: "15px"}}>
           <strong>Welche Beweise gibt es für die Information?</strong> Werden
           Quellen und konkrete Belege angeführt, die man nachvollziehen kann?
         </li>
-        <li>
+        <li style={{paddingTop: "15px"}}>
           <strong>Was ist die mögliche Absicht einer Information?</strong> Geht
           es darum Aufmerksamkeit für etwas zu bekommen? Unruhe zu verbreiten?
           Erlaubt sich jemand einen Scherz? Handelt es sich um Werbung? Oder
           sollen Informationen zur Verfügung gestellt werden?
         </li>
-        <li>
+        <li style={{paddingTop: "15px"}}>
           <strong>Was sagen andere Quellen?</strong> Wird die Information von
           anderen Quellen gestützt, wie etwa Faktenchecks, journalistischen
           Nachrichtenquellen oder der Wikipedia?
