@@ -1,6 +1,7 @@
 import React from "react";
 import "../static/index.css";
 import styled from "styled-components";
+import Link from "next/link";
 
 const H2 = styled.h2`
   font-size: 2.25rem;
@@ -27,9 +28,9 @@ const Contribute = () => {
         hochgeladen.
       </p>
       <p>
-        <a href="https://forms.gle/ZFFhxaJdoQYKRfvy5" target="_blank">
-          Hier geht es zum Einreichen eines neuen Fact-Snacks
-        </a>
+        <span className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          <Link href="https://forms.gle/ZFFhxaJdoQYKRfvy5">HIER geht es zum Einreichen eines neuen Fact-Snacks</Link>
+        </span>
       </p>
     </>
   );
