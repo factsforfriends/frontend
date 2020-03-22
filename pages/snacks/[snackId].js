@@ -4,6 +4,7 @@ import find from "lodash/find";
 import toInteger from "lodash/toInteger";
 import PageTitle from "../../components/PageTitle";
 import { DATA_URL } from "../../constants/urls";
+import fetch from "isomorphic-unfetch";
 
 const SnackDetail = ({ snacks }) => {
   const router = useRouter();

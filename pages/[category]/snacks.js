@@ -5,6 +5,7 @@ import PageTitle from "../../components/PageTitle";
 import startCase from "lodash/startCase";
 import replace from "lodash/replace";
 import { DATA_URL } from "../../constants/urls";
+import fetch from "isomorphic-unfetch";
 
 const Category = ({ snacks }) => {
   const router = useRouter();
