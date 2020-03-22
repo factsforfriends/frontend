@@ -16,7 +16,7 @@ const SnackListElement = ({
   const share = (title, url) => {
     if (navigator.share) {
       navigator
-        .share({ title, url })
+        .share({ text: title + "\n" + url })
         .then(() => console.log("shared"))
         .catch(e => console.error(e));
     } else {
@@ -158,9 +158,7 @@ const SnackListElement = ({
           style={{ margin: "15px 5px" }}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => {
-            // share(Headline, URL);
-            console.log(sharePicRef.current.firstChild);
-            share(Headline, URL)
+            share(Snack, URL);
           }}
         >
           {clipboardStatus != URL && <span>Share!</span>}
