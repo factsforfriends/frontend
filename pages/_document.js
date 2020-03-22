@@ -1,10 +1,11 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { BASE_URL } from "../constants/urls";
 
 export const title = "Facts for Friends";
 const description =
   "Website zum Sammeln von Argumenten und Informationen gegen Fake-News. #WirVsVirus";
-const url = `https://factsforfriends.now.sh/`;
+const url = BASE_URL;
 const thumbnail = `${url}/static/graphics/logo.png`;
 
 export default class MyDocument extends Document {

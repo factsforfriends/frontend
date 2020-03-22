@@ -3,6 +3,7 @@ import replace from "lodash/replace";
 import Link from "next/link";
 import Sharepic from "./Sharepic";
 import htmlToImage from "html-to-image";
+import { BASE_URL } from "../constants/urls";
 
 const SnackListElement = ({
   snack,
@@ -14,7 +15,7 @@ const SnackListElement = ({
   const sharePicRef = useRef();
   let image;
 
-  const share = (title, url) => {
+  const share = (title, url, id) => {
     if (navigator.share) {
       navigator
         .share({ text: title + "\n" + url })
@@ -22,7 +23,7 @@ const SnackListElement = ({
         .catch(e => console.error(e));
     } else {
       console.log("copied URL to clipboard");
-      copyToClipboard(url);
+      copyToClipboard(`${BASE_URL}/snacks/${id}`);
     }
   };
 
@@ -206,7 +207,7 @@ const SnackListElement = ({
           style={{ margin: "15px 5px" }}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => {
-            share(Snack, URL);
+            share(Snack, URL, ID);
           }}
         >
           {clipboardStatus != URL && <span>Share!</span>}
