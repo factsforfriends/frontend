@@ -6,6 +6,7 @@ import { DATA_URL } from "../constants/urls";
 import "../static/index.css";
 import React, { useState } from "react";
 import some from "lodash/some";
+import TagList from "../components/TagList";
 
 const Index = ({ snacks }) => {
   const [inputState, setInputState] = useState("");
@@ -28,6 +29,7 @@ const Index = ({ snacks }) => {
         rel="stylesheet"
       ></link>
       <PageTitle>Kategorien</PageTitle>
+      <TagList snacks={snacks}></TagList>
       <input
         style={{
           padding: "5px",

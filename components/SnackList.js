@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { useRouter } from 'next/router';
 
 import SnackListElement from "./SnackListElement";
 const SnackList = ({ snacks, searchTerm, isOverview }) => {
   const [clipboardStatus, setClipboardStatus] = useState("");
   const [isMinimalView, setMinimalView] = useState(false);
+  const router = useRouter()
 
   const toggleView = () => setMinimalView(!isMinimalView);
 
@@ -43,6 +45,10 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
     setClipboardStatus(str);
     setTimeout(() => setClipboardStatus(""), 3000);
   };
+
+  if (router.query && router.query.tag) {
+    searchTerm = router.query.tag
+  }
 
   return (
     <>

@@ -1,2 +1,2 @@
 export const DATA_URL =
-  "https://raw.githubusercontent.com/flattenandflausch/frontend/master/data/data.json";
+  "https://raw.githubusercontent.com/flattenandflausch/snacks-data/master/data.json";

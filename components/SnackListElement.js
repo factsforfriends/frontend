@@ -10,6 +10,7 @@ const SnackListElement = ({
   clipboardStatus,
   isMinimalView
 }) => {
+
   const sharePicRef = useRef();
   let image;
 
@@ -85,7 +86,7 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            #{category.toLowerCase()}
+            <Link href={{ pathname: '/', query: { tag: category.toLowerCase() }}}><a>#{category.toLowerCase()}</a></Link>
           </span>
         ))}
         {Tags.split(" ").map((tag, _i) => (
@@ -93,7 +94,7 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            #{tag.toLowerCase()}
+            <Link href={{ pathname: '/', query: { tag: tag.toLowerCase() }}}><a>#{tag.toLowerCase()}</a></Link>
           </span>
         ))}
         {Location.split(" ").map((location, _i) => (
@@ -101,7 +102,7 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            #{location.toLowerCase()}
+            <Link href={{ pathname: '/', query: { tag: location.toLowerCase() }}}><a>#{location.toLowerCase()}</a></Link>
           </span>
         ))}
       </div>
