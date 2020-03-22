@@ -21,7 +21,7 @@ const Contribute = () => {
       <ol class="list-decimal">
           <li><Link href="#vier-tipps">Mit 4 Tipps gegen Falschnachrichten</Link></li>
           <li><Link href="#zehn-schritte">Zehn Schritte gegen die Panik</Link></li>
-          <li><Link href="#"></Link></li>
+          {/* <li><Link href="#"></Link></li> */}
       </ol>
 
       <H3 id="vier-tipps">Mit 4 Tipps gegen Falschnachrichten</H3>
@@ -33,7 +33,7 @@ const Contribute = () => {
           <li><strong>Was sagen andere Quellen?</strong> Wird die Information von anderen Quellen gestützt, wie etwa Faktenchecks, journalistischen Nachrichtenquellen oder der Wikipedia?</li>
       </ol>
       <p>Quelle für diese Anleitung sind die verlinkten Studien und Texte der <Link href="https://www.semanticscholar.org/paper/Lateral-Reading%3A-Reading-Less-and-Learning-More-Wineburg-McGrew/5b269628f4dc29b514dfcb0b5e429e49fc0dae6d">Stanford History Education Group</Link>, des <Link href="https://psyarxiv.com/ky4x8/">Max-Planck-Institute for Human Development et al.</Link> und des <Link href="https://newslit.org/">News Literacy Project</Link>.</p>
-      <H3 if="zehn-schritte"></H3>
+      <H3 id="zehn-schritte"></H3>
     </>
   );
 };
