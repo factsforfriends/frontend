@@ -1,4 +1,4 @@
-# flattenandflausch - Frontend 
+# Facts for Friends
 add description here
 
 ## Run locally
