@@ -27,8 +27,17 @@ const TagList = ({ snacks }) => {
         </span>
     );
 
+    const alle = (
+        <span
+        className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <Link href={{ pathname: '/', query: { tag: "" }}}><a>#Alle</a></Link>
+        </span>
+      )
+
   return (
     <Container>
+        {alle}
         {categories}
         {/* {categories.map((tag, _i) => (
         <span
