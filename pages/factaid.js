@@ -18,6 +18,7 @@ const Contribute = () => {
     <>
       <H2>Fact Aid</H2>
       <H3>Inhalt</H3>
+<<<<<<< HEAD
       <ol class="list-decimal" style={{paddingLeft: "20px"}}>
           <li><Link href="#vier-tipps">Mit 4 Tipps gegen Falschnachrichten</Link></li>
           <li><Link href="#zehn-schritte">Zehn Schritte gegen die Panik</Link></li>
@@ -31,8 +32,60 @@ const Contribute = () => {
           <li><strong>Welche Beweise gibt es für die Information?</strong> Werden Quellen und konkrete Belege angeführt, die man nachvollziehen kann?</li>
           <li><strong>Was ist die mögliche Absicht einer Information?</strong> Geht es darum Aufmerksamkeit für etwas zu bekommen? Unruhe zu verbreiten? Erlaubt sich jemand einen Scherz? Handelt es sich um Werbung? Oder sollen Informationen zur Verfügung gestellt werden?</li>
           <li><strong>Was sagen andere Quellen?</strong> Wird die Information von anderen Quellen gestützt, wie etwa Faktenchecks, journalistischen Nachrichtenquellen oder der Wikipedia?</li>
+=======
+      <ol class="list-decimal">
+        <li>
+          <Link href="#vier-tipps">Mit 4 Tipps gegen Falschnachrichten</Link>
+        </li>
+        <li>
+          <Link href="#zehn-schritte">Zehn Schritte gegen die Panik</Link>
+        </li>
+        {/* <li><Link href="#"></Link></li> */}
       </ol>
-      <p>Quelle für diese Anleitung sind die verlinkten Studien und Texte der <Link href="https://www.semanticscholar.org/paper/Lateral-Reading%3A-Reading-Less-and-Learning-More-Wineburg-McGrew/5b269628f4dc29b514dfcb0b5e429e49fc0dae6d">Stanford History Education Group</Link>, des <Link href="https://psyarxiv.com/ky4x8/">Max-Planck-Institute for Human Development et al.</Link> und des <Link href="https://newslit.org/">News Literacy Project</Link>.</p>
+
+      <H3 id="vier-tipps">Mit 4 Tipps gegen Falschnachrichten</H3>
+      <p>
+        Wir alle kennen die Situation: Wir sind viel zuhause, viel auf Whatsapp,
+        Twitter, Facebook, Instagram oder Twitch. Und egal, wo wir uns mit
+        anderen Menschen austauschen, wir tauschen uns auch über Corona aus und
+        bekommen Nachrichten, Informationsschnipsel und Meinungen zugeschickt.
+        Doch wie gehen wir damit am Besten um? Das ist eigentlich gar nicht so
+        schwer, wenn man sich folgende vier Fragen stellt:
+      </p>
+      <ol class="list-decimal">
+        <li>
+          <strong>Wer steht hinter der Information?</strong> Wer hat die
+          Information ursprünglich verfasst? Handelt es sich dabei um eine
+          vertrauenswürdige Quelle, Nachrichtenseite oder Person?
+        </li>
+        <li>
+          <strong>Welche Beweise gibt es für die Information?</strong> Werden
+          Quellen und konkrete Belege angeführt, die man nachvollziehen kann?
+        </li>
+        <li>
+          <strong>Was ist die mögliche Absicht einer Information?</strong> Geht
+          es darum Aufmerksamkeit für etwas zu bekommen? Unruhe zu verbreiten?
+          Erlaubt sich jemand einen Scherz? Handelt es sich um Werbung? Oder
+          sollen Informationen zur Verfügung gestellt werden?
+        </li>
+        <li>
+          <strong>Was sagen andere Quellen?</strong> Wird die Information von
+          anderen Quellen gestützt, wie etwa Faktenchecks, journalistischen
+          Nachrichtenquellen oder der Wikipedia?
+        </li>
+>>>>>>> minor style adjustments
+      </ol>
+      <p>
+        Quelle für diese Anleitung sind die verlinkten Studien und Texte der{" "}
+        <Link href="https://www.semanticscholar.org/paper/Lateral-Reading%3A-Reading-Less-and-Learning-More-Wineburg-McGrew/5b269628f4dc29b514dfcb0b5e429e49fc0dae6d">
+          Stanford History Education Group
+        </Link>
+        , des{" "}
+        <Link href="https://psyarxiv.com/ky4x8/">
+          Max-Planck-Institute for Human Development et al.
+        </Link>{" "}
+        und des <Link href="https://newslit.org/">News Literacy Project</Link>.
+      </p>
       <H3 id="zehn-schritte"></H3>
     </>
   );
