@@ -159,16 +159,34 @@ const SnackListElement = ({
   const sharePicWrapper = (
     <div ref={sharePicRef}>
       {/* <Sharepic text={Snack} source={URL}></Sharepic> */}
-      <img src={'https://raw.githubusercontent.com/flattenandflausch/snacks-data/master/img/' + snack.ID + '.jpg'}></img>
+      <img
+        style={{ borderRadius: "15px" }}
+        src={
+          "https://raw.githubusercontent.com/flattenandflausch/snacks-data/master/img/" +
+          snack.ID +
+          ".jpg"
+        }
+      ></img>
     </div>
   );
 
+  // const containerClassNames = isMinimalView
+  //   ? " p-4 flex flex-col justify-between leading-normal"
+  //   : "border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal";
   const containerClassNames = isMinimalView
-    ? " p-4 flex flex-col justify-between leading-normal"
-    : "border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal";
+    ? " p-4 flex flex-col justify-between leading-normal mb-4"
+    : "bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal";
+
+  const wrapperClassName = isMinimalView ? `` : `mb-4`;
   return (
-    <div key={ID} className="max-w-sm w-full lg:max-w-full lg:flex">
-      <div className={containerClassNames}>
+    <div
+      key={ID}
+      className={"max-w-sm w-full lg:max-w-full lg:flex " + wrapperClassName}
+    >
+      <div
+        style={{ border: "0 2px 6px 0 hsla(0, 0%, 0%, 0.2)" }}
+        className={containerClassNames}
+      >
         <div className="mb-8">
           {overviewCategoryPrefix}
           {isMinimalView ? sharePicWrapper : null}
