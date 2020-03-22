@@ -34,7 +34,7 @@ const About = () => {
         generiert und dann vom Platform-Team verifiziert.
       </p>
       <H2>Unser Team</H2>
-      <p>Im Rahmen des #wirvsvirus Hackathons der deutschen Bundesregierung haben wir uns in einem Team von 10 Developer:innen, Designer:innen, Wissenschaflter:innen, Journalist:innen und Gründer:innen zusammengefunden und in diesem Rahmen die WebApp Facts for Friends ins Leben gerufen.</p>
+      <p>Im Rahmen des #wirvsvirus Hackathons der deutschen Bundesregierung haben wir uns in einem Team von 12 Developer:innen, Designer:innen, Wissenschaflter:innen, Journalist:innen und Gründer:innen zusammengefunden und in diesem Rahmen die WebApp Facts for Friends ins Leben gerufen.</p>
       <P>
         <img 
           style={{ borderRadius: "15px" }}
