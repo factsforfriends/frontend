@@ -9,8 +9,10 @@ const H2 = styled.h2`
 
 const Contribute = () => {
   return (
-    <H2>Fact Aid</H2>
-    );
+    <>
+      <H2>Fact Aid</H2>
+    </>
+  );
 };
 
 export default Contribute;
