@@ -17,8 +17,14 @@ const Index = ({ snacks }) => {
 
   return (
     <>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link>
-	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"></link>
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+      ></link>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        rel="stylesheet"
+      ></link>
       <PageTitle>Kategorien</PageTitle>
       <input
         style={{
@@ -30,7 +36,7 @@ const Index = ({ snacks }) => {
         placeholder="Suche.."
       />
       <SnackList
-        snacks={categoriesWithLatestSnack}
+        snacks={inputState ? snacks : categoriesWithLatestSnack}
         searchTerm={inputState}
         isOverview
       />
