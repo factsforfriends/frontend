@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import replace from "lodash/replace";
+import Sharepic from "./Sharepic";
 
 const SnackList = ({ snacks, searchTerm, isOverview }) => {
   const [clipboardStatus, setClipboardStatus] = useState("");
@@ -77,9 +78,10 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
               <div
                 style={{ margin: "2em 0" }}
                 className="max-w-sm w-full lg:max-w-full lg:flex"
-              >
+                >
                 <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                   <div className="mb-8">
+                  <Sharepic text={Snack} source={URL}></Sharepic>
                     <div>
                       <Link href={dynamicHref} as={dynamicHref} passHref>
                         <a href={dynamicHref}>
