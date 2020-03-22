@@ -7,39 +7,47 @@ const Container = styled.table`
   width: 100%;
 `;
 
-const TagList = ({ snacks }) => {
-    const tags = []
-    snacks.map(snack => {
-        snack.Category.split(" ").map(category => {
-            if (!tags.includes(category.toLowerCase()) && category) {
-                tags.push(category.toLowerCase())
-            }
-        })
-    })
+const TagList = ({ snacks, selectedTag }) => {
+  const tags = [];
+  snacks.map(snack => {
+    snack.Category.split(" ").map(category => {
+      if (!tags.includes(category.toLowerCase()) && category) {
+        tags.push(category.toLowerCase());
+      }
+    });
+  });
 
-    console.log(tags)
+  console.log(tags);
+  console.log(selectedTag);
 
-    const categories = tags.map(tag => 
-        <span
-        className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-        >
-          <Link href={{ pathname: '/', query: { tag: tag.toLowerCase() }}}><a>#{tag.toLowerCase()}</a></Link>
-        </span>
+  const categories = tags.map(tag => {
+    const isSelectedTag = selectedTag === tag.toLowerCase();
+    return (
+      <span
+        className={`${
+          isSelectedTag ? "bg-yellow-400 " : ""
+        }inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2`}
+      >
+        <Link href={{ pathname: "/", query: { tag: tag.toLowerCase() } }}>
+          <a>#{tag.toLowerCase()}</a>
+        </Link>
+      </span>
     );
+  });
 
-    const alle = (
-        <span
-        className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-        >
-          <Link href={{ pathname: '/', query: { tag: "" }}}><a>#Alle</a></Link>
-        </span>
-      )
+  const alle = (
+    <span className="inline-block bg-white-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+      <Link href={{ pathname: "/", query: { tag: "" } }}>
+        <a>#Alle</a>
+      </Link>
+    </span>
+  );
 
   return (
     <Container>
-        {alle}
-        {categories}
-        {/* {categories.map((tag, _i) => (
+      {alle}
+      {categories}
+      {/* {categories.map((tag, _i) => (
         <span
         key={_i}
         className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
@@ -54,6 +62,5 @@ const TagList = ({ snacks }) => {
 export default TagList;
 
 TagList.propTypes = {
-    snacks: PropTypes.array.isRequired
-  };
-  
+  snacks: PropTypes.array.isRequired
+};

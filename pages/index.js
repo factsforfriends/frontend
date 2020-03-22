@@ -7,9 +7,11 @@ import "../static/index.css";
 import React, { useState } from "react";
 import some from "lodash/some";
 import TagList from "../components/TagList";
+import { useRouter } from "next/router";
 
 const Index = ({ snacks }) => {
   const [inputState, setInputState] = useState("");
+  const router = useRouter();
 
   const categoriesWithLatestSnack = [];
   snacks.forEach(snack => {
@@ -29,7 +31,10 @@ const Index = ({ snacks }) => {
         rel="stylesheet"
       ></link>
       <PageTitle>Kategorien</PageTitle>
-      <TagList snacks={snacks}></TagList>
+      <TagList
+        selectedTag={router.query && router.query.tag}
+        snacks={snacks}
+      ></TagList>
       <input
         style={{
           padding: "5px",
