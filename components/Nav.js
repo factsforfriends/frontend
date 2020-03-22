@@ -13,6 +13,14 @@ const Content = styled.div`
   margin: 0 auto;
   max-width: var(--max-width);
   padding: 0 var(--padding);
+  @media only screen and (max-width: 600px) {
+    display: grid;
+    grid: 1fr 1fr;
+    grid-template-columns: 145px 100px 150px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: column;
+    padding: 0 10px;
+  }
 `;
 
 const Credits = styled.a`
