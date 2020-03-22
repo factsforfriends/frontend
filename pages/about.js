@@ -7,6 +7,10 @@ const H2 = styled.h2`
   transform: translateX(-0.15rem);
 `;
 
+const P = styled.p`
+  margin-top: 15px;
+`;
+
 const About = () => {
   return (
     <>
@@ -31,6 +35,12 @@ const About = () => {
       </p>
       <H2>Unser Team</H2>
       <p>Im Rahmen des #wirvsvirus Hackathons der deutschen Bundesregierung haben wir uns in einem Team von 10 Developer:innen, Designer:innen, Wissenschaflter:innen, Journalist:innen und Gründer:innen zusammengefunden und in diesem Rahmen die WebApp Facts for Friends ins Leben gerufen.</p>
+      <P>
+        <img 
+          style={{ borderRadius: "15px" }}
+          src={"https://raw.githubusercontent.com/flattenandflausch/frontend/master/static/graphics/WirVsVirus.jpg"}
+        ></img>
+      </P>
       <ul
         style={{ paddingLeft: "20px", marginTop: "5px" }}
       >
