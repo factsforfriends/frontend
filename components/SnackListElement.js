@@ -158,7 +158,8 @@ const SnackListElement = ({
 
   const sharePicWrapper = (
     <div ref={sharePicRef}>
-      <Sharepic text={Snack} source={URL}></Sharepic>
+      {/* <Sharepic text={Snack} source={URL}></Sharepic> */}
+      <img src={'https://raw.githubusercontent.com/flattenandflausch/snacks-data/master/img/' + snack.ID + '.jpg'}></img>
     </div>
   );
 
