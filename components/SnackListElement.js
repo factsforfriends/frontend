@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import replace from "lodash/replace";
 import Link from "next/link";
 import Sharepic from "./Sharepic";
-import htmlToImage from 'html-to-image';
+import htmlToImage from "html-to-image";
 
 const SnackListElement = ({
   snack,
@@ -11,7 +11,6 @@ const SnackListElement = ({
   isMinimalView,
   copyToClipboard
 }) => {
-
   const sharePicRef = useRef();
   let image;
 
@@ -27,22 +26,23 @@ const SnackListElement = ({
     }
   };
 
-  const generatePic = (node) => {
-    htmlToImage.toPng(node)
-    .then(function (dataUrl) {
-      image = dataUrl;
-    })
-    .catch(function (error) {
-      console.error('oops, something went wrong!', error);
-    });
-  }
+  const generatePic = node => {
+    htmlToImage
+      .toPng(node)
+      .then(function(dataUrl) {
+        image = dataUrl;
+      })
+      .catch(function(error) {
+        console.error("oops, something went wrong!", error);
+      });
+  };
 
   const shareFile = (title, url) => {
     var img = new Image();
     img.src = image;
 
-    const shareData = { files: [img] }
-    console.log(navigator.canShare && navigator.canShare(shareData))
+    const shareData = { files: [img] };
+    console.log(navigator.canShare && navigator.canShare(shareData));
 
     if (navigator.share) {
       navigator
@@ -66,8 +66,18 @@ const SnackListElement = ({
 
   const overviewCategoryPrefix =
     isOverview && Category ? (
-      <div className=" border-b border-gray-400 w-full mb-2 pb-2">
-        <span className="text-gray-900 font-bold text-xl mb-2">{Category}</span>
+      <div
+        className={`${
+          isMinimalView ? "" : "border-b border-gray-400"
+        } w-full mb-2 pb-2`}
+      >
+        <Link href={dynamicHref} as={dynamicHref} passHref>
+          <a href={dynamicHref}>
+            <span className="text-gray-900 font-bold text-xl mb-2">
+              {Category}
+            </span>
+          </a>
+        </Link>
       </div>
     ) : null;
 
@@ -87,7 +97,11 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            <Link href={{ pathname: '/', query: { tag: category.toLowerCase() }}}><a>#{category.toLowerCase()}</a></Link>
+            <Link
+              href={{ pathname: "/", query: { tag: category.toLowerCase() } }}
+            >
+              <a>#{category.toLowerCase()}</a>
+            </Link>
           </span>
         ))}
         {Tags.split(" ").map((tag, _i) => (
@@ -95,7 +109,9 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            <Link href={{ pathname: '/', query: { tag: tag.toLowerCase() }}}><a>#{tag.toLowerCase()}</a></Link>
+            <Link href={{ pathname: "/", query: { tag: tag.toLowerCase() } }}>
+              <a>#{tag.toLowerCase()}</a>
+            </Link>
           </span>
         ))}
         {Location.split(" ").map((location, _i) => (
@@ -103,7 +119,11 @@ const SnackListElement = ({
             key={_i}
             className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
           >
-            <Link href={{ pathname: '/', query: { tag: location.toLowerCase() }}}><a>#{location.toLowerCase()}</a></Link>
+            <Link
+              href={{ pathname: "/", query: { tag: location.toLowerCase() } }}
+            >
+              <a>#{location.toLowerCase()}</a>
+            </Link>
           </span>
         ))}
       </div>
@@ -142,13 +162,16 @@ const SnackListElement = ({
     </div>
   );
 
+  const containerClassNames = isMinimalView
+    ? " p-4 flex flex-col justify-between leading-normal"
+    : "border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal";
   return (
     <div
       key={ID}
       style={{ margin: "2em 0" }}
       className="max-w-sm w-full lg:max-w-full lg:flex"
     >
-      <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div className={containerClassNames}>
         <div className="mb-8">
           {overviewCategoryPrefix}
           {isMinimalView ? sharePicWrapper : null}

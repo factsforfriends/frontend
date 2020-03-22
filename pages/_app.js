@@ -49,14 +49,16 @@ export default class MyApp extends App {
 
           <Main>
             <div className="flex justify-start">
-              <img
-                style={{ width: "20%", marginBottom: "2em" }}
-                src="/static/graphics/logo.png"
-              />
-              <img
+              <a style={{ width: "20%", marginBottom: "2em" }} href="/">
+                <img src="/static/graphics/logo.png" />
+              </a>
+              <a
+                href="https://wirvsvirushackathon.org"
+                target="_blank"
                 style={{ width: "35%", marginBottom: "2em", height: "auto" }}
-                src="/static/graphics/logo_hackathon.png"
-              />
+              >
+                <img src="/static/graphics/logo_hackathon.png" />
+              </a>
             </div>
             <Component {...pageProps} router={router} />
           </Main>
