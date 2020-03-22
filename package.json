@@ -1,7 +1,7 @@
 {
-  "name": "next-pwa-boilerplate",
+  "name": "FactsForFriends",
   "version": "1.3.0",
-  "description": "Start your progressive web app off with a perfect Google Lighthouse score.",
+  "description": "Website enstanden beim #WirVsVirus Hackathon zum Sammeln von Argumenten und Informationen gegen Fake-News",
   "main": "server/index.js",
   "scripts": {
     "build": "next build",
@@ -14,14 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/pingboard/next-pwa-boilerplate.git"
   },
-  "author": "James Y Rauhut <james@seejamescode.com> (https://seejamescode.com/)",
+  "author": "flattenandflausch",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pingboard/next-pwa-boilerplate/issues"
+    "url": "https://github.com/flattenandflausch/frontend/issues"
   },
-  "homepage": "https://next-pwa-boilerplate.now.sh",
+  "homepage": "https://factsforfriends.now.sh/",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "html-to-image": "^0.1.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.2",
     "next-offline": "^4.0.2",

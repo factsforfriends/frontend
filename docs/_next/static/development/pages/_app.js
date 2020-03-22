@@ -10938,7 +10938,9 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 var title = "Facts for Friends";
-var description = "Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score.";
+var description = `Die Webapp Facts for Friends to go stellt kurze und leicht verständliche Gegenargumente (FactsSnacks) zu gängigen FakeNews bereit.
+Engagierte Bürger:innen finden dort teilbare Fact Snacks mit denen sie Fake News in ihrem privaten Umwelt begegnen können, auch wenn es Ihnen an Wissen und/oder Zeit fehlt um selbst lange Texte zu schreiben. Als Multiplikator:innen und Informational influencers erreichen sie so mit geringem Aufwand Personen ihrem privaten Umfeld, die klassischen massenmedialen Fact-Checking-Inhalten oder politischer Kommunikation nicht vertrauen oder von solchen Inhalten überfordert sind.
+Die Fact Snacks werden aus der Community generiert und dann vom Platform-Team verifiziert oder können von verifizierten Fact-Checkern wie z. B. Journalist:innen direkt eingereicht werden.`;
 var url = "https://next-pwa-boilerplate.now.sh";
 var thumbnail = "".concat(url, "/static/graphics/logo.png");
 

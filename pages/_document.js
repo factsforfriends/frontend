@@ -1,11 +1,11 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-export const title = "flattenandflausch";
+export const title = "Facts for Friends";
 const description =
-  "Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score.";
-const url = `https://next-pwa-boilerplate.now.sh`;
-const thumbnail = `${url}/static/graphics/thumbnail.png`;
+  "Website zum Sammeln von Argumenten und Informationen gegen Fake-News. #WirVsVirus";
+const url = `https://factsforfriends.now.sh/`;
+const thumbnail = `${url}/static/graphics/logo.png`;
 
 export default class MyDocument extends Document {
   // This snippet will collect all of page’s critical CSS
