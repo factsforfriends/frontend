@@ -39,6 +39,9 @@ const Contribute = () => {
         <li>
           <Link href="#mythen-entlarven">Wie entlarve ich Mythen?</Link>
         </li>
+        <li>
+            <Link href="#tipps-diskussion">Tipps und Anregungen für die Diskussion mit anderen</Link>
+        </li>
       </ol>
 
       <H3 id="vier-tipps">Mit 4 Tipps gegen Falschnachrichten</H3>
@@ -142,6 +145,19 @@ const Contribute = () => {
       </P>
       <P>
         Die hier zusammengefassten Informationen stammen gekürzt, übersetzt und überarbeitet aus dem <Link href="https://skepticalscience.com/docs/Debunking_Handbook.pdf">Debunking Handbook</Link>, das uns Stephan Lewandowsky zur Verfügung gestellt hat.
+      </P>
+      <H3 id="tipps-diskussion">Tipps und Anregungen für die Diskussion mit anderen</H3>
+      <p>Stell dir vor, du teilst (aus Versehen) eine Falschnachricht und bist überzeugt davon, dass sie richtig ist. Wie möchtest du, dass man dich darauf anspricht? Mit Respekt? Ganz sachlich oder mit Humor? Mach es genau so, wie du es selbst gern hättest!</p>
+      <ul
+        style={{ paddingLeft: "20px", marginTop: "5px" }}
+      >
+          <li style={{paddingTop: "15px"}}>Stelle sicher, dass die Person gerade bereit ist, überhaupt mit dir darüber zu sprechen. Wer todmüde ist oder gleich zur Arbeit muss, möchte vermutlich gerade kein längeres und vielleicht anstrengendes Gespräch führen.</li>
+          <li style={{paddingTop: "15px"}}>Stelle sicher, dass die andere Person weiß, wovon du genau sprichst. Statt das Gespräch mit einer Anschuldigung zu beginnen (“immer teilst du solche Fake-News”) ist es besser eine gemeinsame Gesprächsbasis herzustellen, über die ihr euch beide einig seid. Etwa indem Du das Gespräch beginnst mit “gestern hast du diesen Bericht über xy geteilt”.</li>
+          <li style={{paddingTop: "15px"}}>Erkläre der Person, warum es dir wichtig ist, eine falsche Nachricht zu korrigieren. Sprich dabei über dich selbst, also was es in dir auslöst und was du brauchst oder dir wünschst. Zum Beispiel: “Ich habe die Sorge, dass Menschen, die das lesen, leichtsinnig werden und es dadurch zu Ausgangssperren für alle kommt.” Oder: “Ich bin genervt, weil mir wichtig ist, Rücksicht zu nehmen.”</li>
+          <li style={{paddingTop: "15px"}}>Sage der Person, was du jetzt gerne hättest - und versuche das als Angebot zu sehen. Du könntest zum Beispiel vorschlagen: “Ich würde dir gern eine App zeigen, die dabei hilft, zu unterscheiden, welche Informationen zuverlässig sind. Möchtest du das?” Oder erkundige dich danach, was deine Äußerung bewirkt hat, indem Du fragst: “Wie geht es dir damit wenn du das hörst?”</li>
+      </ul>
+      <P>
+        Vielen Dank an Judith Pfeiffer, die uns diese Informationen zur Verfügung gestellt hat.
       </P>
     </>
   );
