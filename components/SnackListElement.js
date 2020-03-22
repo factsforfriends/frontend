@@ -166,11 +166,7 @@ const SnackListElement = ({
     ? " p-4 flex flex-col justify-between leading-normal"
     : "border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal";
   return (
-    <div
-      key={ID}
-      style={{ margin: "2em 0" }}
-      className="max-w-sm w-full lg:max-w-full lg:flex"
-    >
+    <div key={ID} className="max-w-sm w-full lg:max-w-full lg:flex">
       <div className={containerClassNames}>
         <div className="mb-8">
           {overviewCategoryPrefix}

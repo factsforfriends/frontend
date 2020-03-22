@@ -35,6 +35,7 @@ const Index = ({ snacks }) => {
           padding: "5px",
           width: "100%"
         }}
+        className="my-8 transition-colors duration-100 ease-in-out bg-white shadow-md focus:outline-0 border border-transparent placeholder-gray-600 rounded-lg py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input"
         value={inputState}
         onChange={event => setInputState(event.target.value)}
         placeholder="Suche.."
