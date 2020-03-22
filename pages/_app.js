@@ -21,6 +21,8 @@ const Main = styled.main`
   margin: 0 auto;
   max-width: var(--max-width);
   padding: var(--padding);
+  display: flex;
+  flex-direction: column;
 `;
 
 export default class MyApp extends App {

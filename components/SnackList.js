@@ -4,6 +4,19 @@ import PropTypes from "prop-types";
 import SnackListElement from "./SnackListElement";
 const SnackList = ({ snacks, searchTerm, isOverview }) => {
   const [clipboardStatus, setClipboardStatus] = useState("");
+  const [isMinimalView, setMinimalView] = useState(false);
+
+  const toggleView = () => setMinimalView(!isMinimalView);
+
+  const toggleViewButton = (
+    <button
+      style={{ margin: "15px 5px" }}
+      className="bg-blue-500 hover:bg-blue-700 text-white text-xs font-bold py-1 px-2 rounded self-end"
+      onClick={toggleView}
+    >
+      {isMinimalView ? "List View" : "Minimal View"}
+    </button>
+  );
 
   const share = (title, url) => {
     if (navigator.share) {
@@ -33,6 +46,7 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
 
   return (
     <>
+      {toggleViewButton}
       {snacks
         .filter(snack => {
           if (
@@ -49,6 +63,7 @@ const SnackList = ({ snacks, searchTerm, isOverview }) => {
             isOverview={isOverview}
             clipboardStatus={clipboardStatus}
             share={share}
+            isMinimalView={isMinimalView}
           />
         ))}
     </>
