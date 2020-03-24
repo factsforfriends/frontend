@@ -1,5 +1,21 @@
 # Facts for Friends
-add description here
+Die Progressive Webapp Facts for Friends stellt kurze und leicht verständliche Gegenargumente (Fact Snacks) zu gängigen Fake News - insbesondere zu COVID-19 - bereit und macht Dich zur:zum Fakten-Influencer:in.
+
+Engagierte Bürger:innen finden dort teilbare Fact Snacks, mit denen sie Fake News in ihrem privaten Umfeld begegnen können - auch dann, wenn es ihnen an Wissen und/oder Zeit fehlt, um selbst zu recherchieren oder lange aufklärende Texte zu schreiben. Als Multiplikator:innen und Fakten-Influencer erreichen sie so mit geringem Aufwand Personen in ihrem direkten privaten Umfeld, die in gutem Glauben falsche Informationen und Nachrichten teilen. 
+
+## Tech-Stack
+* NextJS
+* React
+* TailwindCSS
+* now
+
+## Features
+* PWA
+* Offline Support
+* List/Read Facts
+* Search for Facts
+* Tagging
+* Share Facts
 
 ## Run locally
 
